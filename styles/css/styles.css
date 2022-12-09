@@ -24,7 +24,7 @@ body {
   color: #cfcfcf;
   transition: 0.4s color;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .c-header .list-links .item-link a:hover {
   color: #bd8739;
@@ -88,7 +88,7 @@ body {
   padding: 10px;
   color: white;
   transition: 0.5s color;
-  font-weight: 500;
+  font-size: 16px;
 }
 .c-header .menu-wrapper .menu-list .item-link a:hover {
   color: #bd8739;
@@ -99,6 +99,7 @@ body {
 }
 .c-header .menu-wrapper .list-links .item-link a {
   width: 70%;
+  color: white;
 }
 .c-header .slideIn {
   animation: slideIn 0.6s ease-in-out;
@@ -336,6 +337,7 @@ body {
   .menu-wrapper .list-links {
     display: flex !important;
     flex-direction: column;
+    gap: 10px;
   }
 }
 @media (max-width: 500px) {

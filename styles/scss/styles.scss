@@ -26,7 +26,7 @@ body {
         color: #cfcfcf;
         transition: 0.4s color;
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
 
         &:hover {
           color: #bd8739;
@@ -106,7 +106,7 @@ body {
           padding: 10px;
           color: white;
           transition: 0.5s color;
-          font-weight: 500;
+          font-size: 16px;
 
           &:hover {
             color: #bd8739;
@@ -123,6 +123,7 @@ body {
       .item-link {
         a {
           width: 70%;
+          color: white;
         }
       }
     }
@@ -380,6 +381,10 @@ body {
     .list-links {
       display: flex !important;
       flex-direction: column;
+      gap: 10px;
+    }
+    .item-link > a {
+      //color: white !important;
     }
   }
 }
