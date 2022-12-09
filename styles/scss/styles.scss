@@ -26,7 +26,7 @@ body {
         color: #cfcfcf;
         transition: 0.4s color;
         padding: 10px;
-        font-size: 16px;
+        font-size: 20px;
 
         &:hover {
           color: #bd8739;
@@ -52,12 +52,12 @@ body {
       cursor: pointer;
     }
   }
+
   .social-list {
     display: flex;
     align-items: center;
     gap: 16px;
   }
-
 
 
   .app-font-icon:hover {
@@ -123,7 +123,6 @@ body {
       .item-link {
         a {
           width: 70%;
-          color: white;
         }
       }
     }
@@ -174,7 +173,7 @@ body {
 }
 
 .swiper-pagination {
-  bottom: 80px !important;
+  bottom: 100px !important;
 }
 
 .swiper-pagination-bullet {
@@ -213,22 +212,23 @@ body {
   padding: 20px;
 
   &:hover {
-    transform: translateY(20px);
+    transform: translateY(10px);
     transition: 0.4s transform;
   }
 
   .app-font-icon {
     color: #BD8739;
+    font-size: 16px;
   }
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .story-section {
-  background-color: #1F1F1F;
+  background-color: #2a2a2a;
   background-image: url("../../assets/images/R_graphic_element.svg");
   background-repeat: no-repeat;
   background-position: -300px 0;
@@ -383,8 +383,13 @@ body {
       flex-direction: column;
       gap: 10px;
     }
+
     .item-link > a {
       //color: white !important;
+    }
+
+    .item-link > a {
+      font-size: 16px !important;
     }
   }
 }
@@ -397,7 +402,6 @@ body {
   .story-section {
     background-position: -89px 267px !important;
   }
-
 
 
 }
