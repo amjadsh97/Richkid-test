@@ -217,13 +217,9 @@ body {
   left: 0;
   right: 0;
   cursor: pointer;
-  transition: 0.4s transform;
   padding: 20px;
-
-  &:hover {
-    transform: translateY(10px);
-    transition: 0.4s transform;
-  }
+  transform: translateY(10px);
+  animation: scrollButton 2s ease-in-out infinite backwards;
 
   .app-font-icon {
     color: var(--primary-color);
@@ -232,8 +228,6 @@ body {
 }
 
 .section {
-  //padding-top: 140px;
-  //padding-bottom: 140px;
   padding-block: clamp(40px, 10vw, 140px);
 }
 
@@ -354,10 +348,10 @@ body {
     padding-inline: 20px;
   }
   .section-text {
-    flex: unset;
+    flex: 0.5;
   }
   .section-image {
-    flex: unset;
+    flex: 0.5;
     width: 40%;
   }
 }
@@ -437,5 +431,11 @@ body {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes scrollButton {
+  50% {
+    transform: translateY(0);
   }
 }

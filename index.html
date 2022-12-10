@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="js/app.js" defer></script>
-  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="icon" href="assets/icons/favicon.svg"/>
   <link rel="stylesheet" href="moon/style.css"/>
   <link rel="stylesheet" href="styles/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <title>Real Estate</title>
 </head>
 <body>
@@ -33,7 +34,8 @@
         <li><a href="#"><span class="app-font-icon icon-instagram"></span></a></li>
       </ul>
     </nav>
-    <button id="menu-button" class="menu-button"><span style="font-size: 40px" class="app-font-icon icon-menu"></span></button>
+    <button id="menu-button" class="menu-button"><span style="font-size: 40px" class="app-font-icon icon-menu"></span>
+    </button>
   </div>
   <div class="menu-wrapper">
     <button id="close-icon" class="btn close-icon">
@@ -112,16 +114,25 @@
 
   <section class="section story-section">
     <div class="section-wrapper">
-      <div class="section-text u-flow-fluid">
-        <h2 class="section-title">Our story</h2>
-        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque error ex ipsam quasi sit
-          voluptatum. Atque beatae earum exercitationem, facere laborum modi mollitia nihil, odio pariatur quas quasi
-          similique.</p>
-        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur esse maiores nemo obcaecati repellat.
-          Amet animi deleniti labore magni sed suscipit. Aliquam error esse labore perspiciatis possimus quae? Delectus,
-          quaerat.</p>
+      <div class="item section-text" data-aos="fade-right">
+        <div class="u-flow-fluid">
+          <h2 class="section-title">Our story</h2>
+          <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque
+            error ex ipsam quasi sit
+            voluptatum. Atque beatae earum exercitationem, facere laborum modi mollitia nihil, odio pariatur quas quasi
+            similique.</p>
+          <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur esse
+            maiores nemo obcaecati repellat.
+            Amet animi deleniti labore magni sed suscipit. Aliquam error esse labore perspiciatis possimus quae?
+            Delectus,
+            quaerat.</p>
+        </div>
       </div>
-      <img class="section-image" src="assets/images/about_us_picture.png" alt="about us image">
+
+      <div class="item section-image" data-aos="fade-left">
+        <img src="assets/images/about_us_picture.png" alt="about us image">
+      </div>
+
     </div>
   </section>
 
@@ -143,7 +154,14 @@
 			delay: 2000,
 			disableOnInteraction: true,
 		},
+		keyboard: {
+			enabled: true,
+		},
 	});
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
 </script>
 
 </body>

@@ -21,3 +21,7 @@ closeMenuButton.addEventListener("click", () => {
 	document.querySelector(':root').style.setProperty('--display-menu', `block`);
 	menuWrapper.classList.remove("slideIn");
 })
+
+AOS.init({
+	duration: 1200,
+})
