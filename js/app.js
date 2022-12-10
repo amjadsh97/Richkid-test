@@ -1,12 +1,12 @@
-const scrollButton = document.querySelector(".scroll-button");
+const scrollButton = document.querySelector("#scroll-button");
 const menuWrapper = document.querySelector(".menu-wrapper");
 const closeMenuButton = document.querySelector("#close-icon");
 const openMenuButton = document.querySelector("#menu-button");
 
-scrollButton.addEventListener("click",() => {
+scrollButton.addEventListener("click", () => {
 	window.scrollTo({
-		top:document.querySelector(".story-section")?.offsetTop,
-		behavior:"smooth",
+		top: document.querySelector(".story-section")?.offsetTop,
+		behavior: "smooth",
 	})
 })
 

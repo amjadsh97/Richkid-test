@@ -28,7 +28,7 @@
   </ul>
   <div class="header-side">
     <nav class="social-list">
-      <ul class="list-links social-list">
+      <ul class="social-links">
         <li><a href="#"><span class="app-font-icon icon-facebook"></span></a></li>
         <li><a href="#"><span class="app-font-icon icon-instagram"></span></a></li>
       </ul>
@@ -51,14 +51,14 @@
     </ul>
 
     <nav class="social-list d-none">
-      <ul class="list-links social-list">
+      <ul class="social-links-menu">
         <li><a href="#"><span class="app-font-icon icon-facebook"></span></a></li>
         <li><a href="#"><span class="app-font-icon icon-instagram"></span></a></li>
       </ul>
     </nav>
   </div>
 </header>
-<!---->
+
 <main class="c-main">
   <section>
     <div class="swiper mySwiper">
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <button class="scroll-button"><span class="app-font-icon icon-arrow"></span></button>
+      <button id="scroll-button" class="scroll-button"><span class="app-font-icon icon-arrow"></span></button>
     </div>
 
   </section>
@@ -130,8 +130,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
 <script>
 	var swiper = new Swiper(".mySwiper", {
 		pagination: {
