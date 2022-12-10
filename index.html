@@ -79,7 +79,7 @@
         <div class="swiper-slide">
           <div class="swipe-item">
             <div class="swipe-content">
-              <h1 class="swipe-title">Exclusive Spaces For A Lifetime</h1>
+              <h1 class="swipe-title">Exclusive Spaces <br> For A Lifetime</h1>
               <span class="swipe-description">Real Estate And Luxury Properties</span>
             </div>
             <picture class="picture">
@@ -93,7 +93,7 @@
         <div class="swiper-slide">
           <div class="swipe-item">
             <div class="swipe-content">
-              <h1 class="swipe-title">Exclusive Spaces For A Lifetime</h1>
+              <h1 class="swipe-title">Exclusive Spaces <br> For A Lifetime</h1>
               <span class="swipe-description">Real Estate And Luxury Properties</span>
             </div>
             <picture class="picture">
@@ -138,7 +138,11 @@
 			renderBullet: function (index, className) {
 				return '<span class="' + className + '">' + "</span>";
 			}
-		}
+		},
+		autoplay: {
+			delay: 2000,
+			disableOnInteraction: true,
+		},
 	});
 </script>
 
